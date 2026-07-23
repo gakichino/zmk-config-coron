@@ -24,28 +24,27 @@
            You will need to recalculate these indices later. */
 
         tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <6 7>;
+            layers = <0>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        win_onsei {
+            bindings = <&kp LG(H)>;
+            key-positions = <6 7>;
+            layers = <1>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        to_mac_system {
+            bindings = <&mo 6>;
+            key-positions = <45 46>;
+            layers = <0>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        to_win_system {
+            bindings = <&mo 7>;
+            key-positions = <45 46>;
+            layers = <1>;
         };
     };
 
@@ -97,10 +96,10 @@
 
         mac_default {
             bindings = <
-&none  &kp Q                      &kp W  &kp E  &kp R                        &kp T        &kp Y              &kp U                         &lt 5 I                 &kp O                &kp P      &none
-&none  &mt2 LEFT_CONTROL A        &kp S  &kp D  &kp F                        &kp G        &kp LS(LG(S))      &kp MINUS                     &kp H                   &kp J                &kp K      &kp L    &mt2 RIGHT_CONTROL SEMI  &none
-&none  &mt LEFT_SHIFT Z           &kp X  &kp C  &kp V                        &kp B        &mkp MB1           &kp SEMICOLON                 &kp N                   &kp M                &kp COMMA  &kp DOT  &lt 2 SLASH              &none
-&none  &mt2 RIGHT_ALT LANGUAGE_1  &none  &none  &lt_to_layer_0 3 INT_HENKAN  &lt 0 SPACE  &mt2 LEFT_GUI TAB  &hold_mt RIGHT_GUI BACKSPACE  &mt2 RIGHT_SHIFT ENTER  &mt2 LEFT_ALT LANG2  &none
+&none  &kp Q                      &kp W  &kp E  &kp R       &kp T        &kp Y              &kp U                         &kp I                   &kp O                &kp P      &none
+&none  &mt2 LEFT_CONTROL A        &kp S  &kp D  &kp F       &kp G        &kp LS(LG(S))      &kp LC(DOWN)                  &kp H                   &kp J                &kp K      &kp L    &mt2 RIGHT_CONTROL SEMI  &none
+&none  &mt LEFT_SHIFT Z           &kp X  &kp C  &kp V       &kp B        &mkp MB1           &kp LC(UP_ARROW)              &kp N                   &kp M                &kp COMMA  &kp DOT  &lt 2 SLASH              &none
+&none  &mt2 RIGHT_ALT LANGUAGE_1  &none  &none  &kp ESCAPE  &lt 3 SPACE  &mt2 LEFT_GUI TAB  &hold_mt RIGHT_GUI BACKSPACE  &mt2 RIGHT_SHIFT ENTER  &mt2 LEFT_ALT LANG2  &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -124,7 +123,7 @@
 &trans  &kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &kp CARET                &kp BACKSPACE   &kp DELETE             &kp TAB        &kp MINUS     &trans
 &trans  &kp ASTERISK                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &kp LC(LA(KP_NUMBER_0))  &kp UNDERSCORE  &kp LEFT               &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
 &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &trans                   &trans          &kp HOME               &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans     &trans
-&trans  &trans                      &trans           &trans           &kp SPACE        &trans     &trans                   &trans          &mt2 RSHIFT LS(ENTER)  &trans         &trans
+&trans  &trans                      &trans           &trans           &kp SPACE        &lt 4 DOT  &trans                   &trans          &mt2 RSHIFT LS(ENTER)  &trans         &trans
             >;
         };
 
