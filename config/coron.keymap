@@ -1,21 +1,19 @@
 /* coron.keymap */
 
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/input_transform.h>
-#include <input/processors.dtsi>
 
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
-&trackball {
-    scroll-layers = <3>;
-};
+&trackball { scroll-layers = <3>; };
 
 &trackball_listener {
     invert_scroll {
@@ -34,7 +32,7 @@
         /* Note: Key positions have shifted due to added columns.
            You will need to recalculate these indices later. */
 
-        tab {
+        mac_onsei {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <6 7>;
             layers = <0>;
@@ -47,13 +45,13 @@
         };
 
         to_mac_system {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <45 46>;
             layers = <0>;
         };
 
         to_win_system {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <45 46>;
             layers = <1>;
         };
