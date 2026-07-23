@@ -63,12 +63,12 @@
 
         right_click {
             bindings = <&mkp MB2>;
-            key-positions = <23 24>;
+            key-positions = <22 21>;
         };
 
         mid_click {
             bindings = <&mkp MB3>;
-            key-positions = <22 24>;
+            key-positions = <21 23>;
         };
     };
 
@@ -120,7 +120,7 @@
 
         mac_default {
             bindings = <
-&none  &kp Q                      &kp W  &kp E  &kp R       &kp T        &kp Y              &kp U                         &kp I                   &kp O                &kp P      &none
+&none  &kp Q                      &kp W  &kp E  &kp R       &kp T        &kp Y              &kp U                         &kp I                   &lt 8 O              &kp P      &none
 &none  &mt2 LEFT_CONTROL A        &kp S  &kp D  &kp F       &kp G        &kp F11            &kp LC(DOWN)                  &kp H                   &kp J                &kp K      &kp L    &mt2 RIGHT_CONTROL SEMI  &none
 &none  &mt LEFT_SHIFT Z           &kp X  &kp C  &kp V       &kp B        &mkp MB1           &kp LC(UP_ARROW)              &kp N                   &kp M                &kp COMMA  &kp DOT  &lt 3 SLASH              &none
 &none  &mt2 RIGHT_ALT LANGUAGE_1  &none  &none  &kp ESCAPE  &lt 4 SPACE  &mt2 LEFT_GUI TAB  &hold_mt RIGHT_GUI BACKSPACE  &mt2 RIGHT_SHIFT ENTER  &mt2 LEFT_ALT LANG2  &none
@@ -207,6 +207,15 @@
 
             label = "system_laye";
             sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
+        };
+
+        scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
