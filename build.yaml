@@ -19,7 +19,7 @@
 ---
 include:
  - board: seeeduino_xiao_ble
-   shield: coron_R
+   shield: coron_R rgbled_adapter
    snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
    shield: coron_L
