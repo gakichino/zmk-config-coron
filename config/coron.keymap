@@ -63,6 +63,30 @@
             bindings = <&mkp MB3>;
             key-positions = <21 23>;
         };
+
+        mac_virtual_desk1 {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <5 4>;
+            layers = <0>;
+        };
+
+        mac_virtual_desktop2 {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <4 3>;
+            layers = <0>;
+        };
+
+        win_virtual_desktop1 {
+            bindings = <&kp LC(LG(RIGHT))>;
+            key-positions = <5 4>;
+            layers = <1>;
+        };
+
+        win_virtual_desktop2 {
+            bindings = <&kp LC(LG(LEFT))>;
+            key-positions = <5 4>;
+            layers = <1>;
+        };
     };
 
     macros {
