@@ -38,13 +38,13 @@
         };
 
         to_mac_system {
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
             key-positions = <45 46>;
             layers = <0>;
         };
 
         to_win_system {
-            bindings = <&mo 7>;
+            bindings = <&mo 6>;
             key-positions = <45 46>;
             layers = <1>;
         };
@@ -56,7 +56,7 @@
 
         right_click {
             bindings = <&mkp MB2>;
-            key-positions = <22 21>;
+            key-positions = <21 20 20>;
         };
 
         mid_click {
@@ -113,10 +113,10 @@
 
         mac_default {
             bindings = <
-&none  &kp Q                      &kp W  &kp E  &kp R       &kp T        &kp Y              &kp U                         &kp I                   &lt 8 O              &kp P      &none
+&none  &kp Q                      &kp W  &kp E  &kp R       &kp T        &kp Y              &kp U                         &kp I                   &lt 7 O              &kp P      &none
 &none  &mt2 LEFT_CONTROL A        &kp S  &kp D  &kp F       &kp G        &kp F11            &kp LC(DOWN)                  &kp H                   &kp J                &kp K      &kp L    &mt2 RIGHT_CONTROL SEMI  &none
-&none  &mt LEFT_SHIFT Z           &kp X  &kp C  &kp V       &kp B        &mkp MB1           &kp LC(UP_ARROW)              &kp N                   &kp M                &kp COMMA  &kp DOT  &lt 3 SLASH              &none
-&none  &mt2 RIGHT_ALT LANGUAGE_1  &none  &none  &kp ESCAPE  &lt 4 SPACE  &mt2 LEFT_GUI TAB  &hold_mt RIGHT_GUI BACKSPACE  &mt2 RIGHT_SHIFT ENTER  &mt2 LEFT_ALT LANG2  &none
+&none  &mt LEFT_SHIFT Z           &kp X  &kp C  &kp V       &kp B        &mkp MB1           &kp LC(UP_ARROW)              &kp N                   &kp M                &kp COMMA  &kp DOT  &lt 2 SLASH              &none
+&none  &mt2 RIGHT_ALT LANGUAGE_1  &none  &none  &kp ESCAPE  &lt 3 SPACE  &mt2 LEFT_GUI TAB  &hold_mt RIGHT_GUI BACKSPACE  &mt2 RIGHT_SHIFT ENTER  &mt2 LEFT_ALT LANG2  &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
@@ -135,23 +135,12 @@
             sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
         };
 
-        scroll_invert {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "scroll_invert";
-        };
-
         numbers {
             bindings = <
 &trans  &kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &none       &kp BACKSPACE  &kp DELETE             &kp TAB        &kp MINUS     &trans
 &trans  &kp ASTERISK                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS   &kp C_MUTE  &kp LC(RIGHT)  &kp LEFT               &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
 &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &trans      &kp LC(LEFT)   &kp HOME               &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans     &trans
-&trans  &trans                      &trans           &trans           &kp SPACE        &lt 5 DOT  &trans      &trans         &mt2 RSHIFT LS(ENTER)  &trans         &trans
+&trans  &trans                      &trans           &trans           &kp SPACE        &lt 4 DOT  &trans      &trans         &mt2 RSHIFT LS(ENTER)  &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -161,7 +150,7 @@
             bindings = <
 &none  &kp QUESTION               &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp BACKSPACE  &kp TILDE      &none          &kp UNDER      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT       &none
 &none  &kp AT                     &kp SINGLE_QUOTE   &kp DOLLAR       &kp DELETE     &kp SLASH      &kp LS(LG(S))  &kp MINUS      &kp HASH              &none                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_CONTROL  &none
-&none  &kp LEFT_SHIFT             &kp GRAVE          &kp CARET        &kp PIPE       &kp BACKSLASH  &mkp MB1       &kp SEMICOLON  &kp ASTERISK          &kp AMPS               &kp LEFT_BRACE    &kp RIGHT_BRACE    &mo 5             &none
+&none  &kp LEFT_SHIFT             &kp GRAVE          &kp CARET        &kp PIPE       &kp BACKSLASH  &mkp MB1       &kp SEMICOLON  &kp ASTERISK          &kp AMPS               &kp LEFT_BRACE    &kp RIGHT_BRACE    &mo 4             &none
 &none  &mt2 RIGHT_ALT LANGUAGE_1  &none              &none            &none          &trans         &trans         &trans         &trans                &mt2 LEFT_ALT LANG2    &none
             >;
 
@@ -181,7 +170,7 @@
         mac_bt_shortcuts {
             bindings = <
 &trans  &sys_reset           &bootloader   &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(N5))  &none   &to 0   &to 1   &bootloader  &sys_reset  &trans
-&trans  &trans               &bt BT_SEL 4  &out OUT_TOG          &tog 2                &none           &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
+&trans  &trans               &bt BT_SEL 4  &out OUT_TOG          &tog 0                &none           &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
 &trans  &bt BT_SEL 0         &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &none           &trans  &trans  &none   &trans       &trans      &trans      &trans          &none
 &trans  &kp LG(LA(C_POWER))  &trans        &trans                &trans                &trans          &trans  &trans  &trans  &trans       &none
             >;
@@ -193,7 +182,7 @@
         win_bt_shortcuts {
             bindings = <
 &trans  &sys_reset    &bootloader   &kp LG(PRINTSCREEN)  &kp LS(LG(S))  &kp LG(LS(S))  &none   &to 0   &to 1   &bootloader  &sys_reset  &trans
-&trans  &trans        &bt BT_SEL 4  &out OUT_TOG         &tog 2         &none          &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
+&trans  &trans        &bt BT_SEL 4  &out OUT_TOG         &tog 0         &none          &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2         &bt BT_SEL 3   &none          &trans  &trans  &none   &trans       &trans      &trans      &trans          &none
 &trans  &kp LG(L)     &trans        &trans               &trans         &trans         &trans  &trans  &trans  &trans       &none
             >;
