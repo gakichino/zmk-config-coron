@@ -56,12 +56,12 @@
 
         right_click {
             bindings = <&mkp MB2>;
-            key-positions = <21 20 20>;
+            key-positions = <36 37>;
         };
 
         mid_click {
             bindings = <&mkp MB3>;
-            key-positions = <21 23>;
+            key-positions = <9 8>;
         };
 
         mac_virtual_desk1 {
