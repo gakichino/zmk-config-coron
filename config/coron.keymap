@@ -25,18 +25,6 @@
         /* Note: Key positions have shifted due to added columns.
            You will need to recalculate these indices later. */
 
-        mac_onsei {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        win_onsei {
-            bindings = <&kp LG(H)>;
-            key-positions = <6 7>;
-            layers = <1>;
-        };
-
         to_mac_system {
             bindings = <&mo 5>;
             key-positions = <45 46>;
@@ -66,19 +54,19 @@
 
         mac_virtual_desk1 {
             bindings = <&kp LC(RIGHT)>;
-            key-positions = <5 4>;
+            key-positions = <6 7>;
             layers = <0>;
         };
 
         mac_virtual_desktop2 {
             bindings = <&kp LC(LEFT)>;
-            key-positions = <4 3>;
+            key-positions = <4 5>;
             layers = <0>;
         };
 
         win_virtual_desktop1 {
             bindings = <&kp LC(LG(RIGHT))>;
-            key-positions = <5 4>;
+            key-positions = <6 7>;
             layers = <1>;
         };
 
@@ -198,10 +186,10 @@
 
         mac_bt_shortcuts {
             bindings = <
-&trans  &sys_reset           &bootloader   &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(N5))  &none   &to 0   &to 1   &bootloader  &sys_reset  &trans
-&trans  &trans               &bt BT_SEL 4  &out OUT_TOG          &tog 0                &none           &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
-&trans  &bt BT_SEL 0         &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &none           &trans  &trans  &none   &trans       &trans      &trans      &trans          &none
-&trans  &kp LG(LA(C_POWER))  &trans        &trans                &trans                &trans          &trans  &trans  &trans  &trans       &none
+&trans  &sys_reset           &bootloader   &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(N5))    &none   &to 0   &to 1   &bootloader  &sys_reset  &trans
+&trans  &trans               &bt BT_SEL 4  &out OUT_TOG          &none                 &kp LEFT_CONTROL  &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
+&trans  &bt BT_SEL 0         &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &none             &trans  &trans  &none   &trans       &trans      &trans      &trans          &none
+&trans  &kp LG(LA(C_POWER))  &trans        &trans                &trans                &trans            &trans  &trans  &trans  &trans       &none
             >;
 
             label = "system_layer";
@@ -211,7 +199,7 @@
         win_bt_shortcuts {
             bindings = <
 &trans  &sys_reset    &bootloader   &kp LG(PRINTSCREEN)  &kp LS(LG(S))  &kp LG(LS(S))  &none   &to 0   &to 1   &bootloader  &sys_reset  &trans
-&trans  &trans        &bt BT_SEL 4  &out OUT_TOG         &tog 0         &none          &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
+&trans  &trans        &bt BT_SEL 4  &out OUT_TOG         &none          &kp LG(H)      &trans  &trans  &trans  &trans       &trans      &bt BT_CLR  &bt BT_CLR_ALL  &none
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2         &bt BT_SEL 3   &none          &trans  &trans  &none   &trans       &trans      &trans      &trans          &none
 &trans  &kp LG(L)     &trans        &trans               &trans         &trans         &trans  &trans  &trans  &trans       &none
             >;
