@@ -14,7 +14,7 @@
 };
 
 &trackball {
-    scroll-layers = <7>;
+    scroll-layers = <3 7>;
     snipe-layers = <2>;
 };
 
